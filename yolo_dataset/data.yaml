@@ -1,0 +1,7 @@
+train: /home/cho/Desktop/github/mirtec-project/new-yolo/yolo_dataset/train/images
+val: /home/cho/Desktop/github/mirtec-project/new-yolo/yolo_dataset/val/images
+test: /home/cho/Desktop/github/mirtec-project/new-yolo/yolo_dataset/test/images
+nc: 2
+names:
+- CMounting
+- CSolder
