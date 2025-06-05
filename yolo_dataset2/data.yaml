@@ -1,0 +1,7 @@
+train: /home/cho/Desktop/github/mirtec-project/new-yolo/yolo_dataset2/train/images
+val: /home/cho/Desktop/github/mirtec-project/new-yolo/yolo_dataset2/val/images
+test: /home/cho/Desktop/github/mirtec-project/new-yolo/yolo_dataset2/test/images
+nc: 2
+names:
+- Package
+- Solder

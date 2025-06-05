@@ -104,8 +104,8 @@ def main(args):
          print("입력 디렉토리에서 JSON 파일을 찾을 수 없습니다:", input_dir)
          return
     
-    # 고정된 클래스 설정: "CMounting"과 "CSolder"만 사용합니다.
-    expected_classes = ["CMounting", "CSolder"]  # 반드시 이 순서대로 사용. (클래스 0 과 1에 해당)
+    # 고정된 클래스 설정: "Package"과 "Solder"만 사용합니다.
+    expected_classes = ["Package", "Solder"]  # 반드시 이 순서대로 사용. (클래스 0 과 1에 해당)
     class_mapping = {label: idx for idx, label in enumerate(expected_classes)}
     class_list = expected_classes
     print("사용할 클래스:", class_list)
@@ -156,7 +156,7 @@ def main(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="LabelMe 데이터셋을 YOLO (Ultralytics) 형식으로 변환합니다.")
-    parser.add_argument("--input_dir", type=str, default=".", help="LabelMe JSON 파일과 이미지가 있는 입력 디렉토리")
-    parser.add_argument("--output_dir", type=str, default="./yolo_dataset", help="YOLO 형식 데이터셋이 저장될 출력 디렉토리")
+    parser.add_argument("--input_dir", type=str, default="./gt-last", help="LabelMe JSON 파일과 이미지가 있는 입력 디렉토리")
+    parser.add_argument("--output_dir", type=str, default="./yolo_dataset2", help="YOLO 형식 데이터셋이 저장될 출력 디렉토리")
     args = parser.parse_args()
     main(args)
