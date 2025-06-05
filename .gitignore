@@ -1,5 +1,5 @@
 runs
-*.pt
+# *.pt
 gt-last
 gt-dataset
 yolo-dataset
