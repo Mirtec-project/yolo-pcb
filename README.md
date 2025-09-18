@@ -1,13 +1,29 @@
-# New YOLO PCB 검출 프로젝트
+# YOLO-HR: 고해상도 이미지 학습을 위한 경량화 YOLO 모델
 
-이 프로젝트는 YOLO(You Only Look Once) 모델을 사용하여 PCB(Printed Circuit Board) 상의 패키지(Package)와 솔더(Solder)를 검출하는 커스텀 모델을 학습하고 추론하는 프로젝트입니다.
+이 프로젝트는 기존의 YOLOv11모델을 개선하여 PCB(Printed Circuit Board)와 같은 3904x3904의 고해상도 이미지에서 효율적인 학습 및 추론을 가능하게 하는 모델을 개발하는 프로젝트입니다.
 
-## 📋 프로젝트 개요
+## 프로젝트 목적
 
-- **목적**: PCB 이미지에서 Package와 Solder 구성요소 자동 검출
-- **클래스**: 2개 (Package, Solder)
-- **기반 모델**: Ultralytics YOLO
-- **커스텀 아키텍처**: 다양한 모델 구조 실험 및 최적화
+![프로젝트 목적](images/purpose.png)
+
+
+## 수상 내역
+
+![논문상 수상 사진](images/award_photo.jpg)
+
+[논문 바로가기](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12313630&nodeId=NODE12313630&mobileYN=N&medaTypeCode=185005&isPDFSizeAllowed=true&locale=ko&foreignIpYn=N&articleTitle=YOLO-HR%3A+%EA%B3%A0%ED%95%B4%EC%83%81%EB%8F%84+%EC%9D%B4%EB%AF%B8%EC%A7%80+%ED%95%99%EC%8A%B5%EC%9D%84+%EC%9C%84%ED%95%9C+%EA%B2%BD%EB%9F%89%ED%99%94+YOLO+%EB%AA%A8%EB%8D%B8&articleTitleEn=YOLO-HR%3A+A+Lightweight+YOLO+Model+for+High-Resolution+Image+Learning&voisId=VOIS00779160&voisName=2025+%EC%A0%9C40%ED%9A%8C+%EC%A0%9C%EC%96%B4%EB%A1%9C%EB%B4%87%EC%8B%9C%EC%8A%A4%ED%85%9C%ED%95%99%ED%9A%8C+%ED%95%99%EC%88%A0%EB%8C%80%ED%9A%8C&voisCnt=516&searchResultKey=%2FlMfWK6MWZi5N74t6Fqz8TrkPkBxmMx25IqhA%2F8OrriZSvtpEKaedZBtVdoyygEU&language=ko_KR&hasTopBanner=true)
+
+
+## 모델 구조
+
+![네트워크 구조](images/network.png)
+
+
+## 결과
+
+![결과](images/result.png)
+
+
 
 ## 🛠️ 환경 설정
 
